@@ -3,6 +3,7 @@ import styles from './Navbar.module.scss';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import classNames from 'classnames';
 import { BsCart, BsCartFill } from "react-icons/bs";
+import Busca from 'components/Busca';
 
 const iconeProps = {
     color: 'white',
@@ -21,7 +22,7 @@ function Navbar() {
             </a>
         </div>
         <div className={styles.busca}>
-
+            <Busca />
         </div>
         <div className={styles.icones}>
             <a href="/carrinho" >
